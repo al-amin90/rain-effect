@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.rain {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url('../images/george-hiles-ZHF033ykCx8-unsplash.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.raining {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/rain.png');
+    animation: raining 0.4s linear infinite;
+}
+
+@keyframes raining {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 10% 100%;
+    }
+}
